@@ -14,6 +14,8 @@ for team in teams:
     team_record = team.select_one('th > strong').text
     team_score = team.select_one('td > strong').text
 
+    # 코드 수정해서 commit 해보기
+    team_soccer = team.select_one('>a').text
 
     if image_team:
         print(team_record, team_name, team_score)
